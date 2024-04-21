@@ -9,22 +9,28 @@
         #modalCrear:target{
             display: block;
         }
+        #modalCrear:target{
+            display: none;
+        }
 
         #modalEditar:target{/* Muestra el modal cuando se le da al boton */
             display: block;
+        }
+        #modalEditar:target{/* Muestra el modal cuando se le da al boton */
+            display: none;
         }
     </style>
 </head>
 <body>
     <div id="contedor" class="ml-8 mt-6">
-        <h1 class="text-4xl font-extrabold dark:text-white">Panel de Gestión de Pedidos</h1>
+        <h1 class="text-4xl font-extrabold dark:text-black">Panel de Gestión de Pedidos</h1>
         <div class="flex mt-3 space-x-3">
             <!-- Esta tarxeta dará acceso á compoñente ENGADIR -->
             <div id="guardar" class="bg-lime-500 rounded-md w-36 h-11">
                 <p class="mt-2 ml-3 text-white">Guardar Cambios</p>
             </div>
             <!-- Esta tarxeta dará acceso á compoñente CONSULTAR -->
-            <a href="formulario alta.html" class="bg-sky-700 rounded-md w-36 h-11">
+            <a href="formularioalta.html" class="bg-sky-700 rounded-md w-36 h-11">
                 <button id="nueva" type="button" class="mt-2 ml-4 text-white">
                     Añadir Paquete
                 </button>
