@@ -42,19 +42,19 @@ def get_paquetes():
 @app.route('/')
 @app.route('/index/<id>', methods=['GET'])
 def get_paquete(id):
-    paquetes = Paquetes.query.get_or_404(id)
+    paquete = Paquetes.query.get_or_404(id)
     return jsonify({
-        'id': paquetes.id,
-        'fecha_hora': paquetes.fecha_hora,
-        'id_empleado': paquetes.id_empleado,
-        'descripcion' : paquetes.descripcion,
-        'sn' : paquetes.sn,
-        'compañiaTransporte' : paquetes.compañiaTransporte,
-        'track' : paquetes.track,
-        'tipoProducto' : paquetes.tipoProducto,
-        'origen' : paquetes.origen,
-        'destino' : paquetes.destino,
-        'minando' : paquetes.minando,
+        'id': paquete.id,
+        'fecha_hora': paquete.fecha_hora,
+        'id_empleado': paquete.id_empleado,
+        'descripcion' : paquete.descripcion,
+        'sn' : paquete.sn,
+        'compañiaTransporte' : paquete.compañiaTransporte,
+        'track' : paquete.track,
+        'tipoProducto' : paquete.tipoProducto,
+        'origen' : paquete.origen,
+        'destino' : paquete.destino,
+        'minando' : paquete.minando,
     })
 
 @app.route('/')
